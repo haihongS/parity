@@ -26,8 +26,8 @@ export default class RedPacket extends Component {
         <Actionbar
           title={
             <FormattedMessage
-            id='redpacket.title'
-            defaultMessage='...'
+              id='redpacket.title'
+              defaultMessage='...'
             />
           }
         />
