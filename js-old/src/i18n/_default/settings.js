@@ -84,6 +84,10 @@ export default {
       description: `This view. Allows you to customize the application in term of options, operation and look and feel.`,
       label: `Settings`
     },
+    redpacket: {
+      description: `Gonna Package a red packet to share your joy?`,
+      label: `Red Packet`
+    },
     signer: {
       description: `The secure transaction management area of the application where you can approve any outgoing transactions made from the application as well as those placed into the queue by decentralized applications.`,
       label: `Signer`

@@ -26,6 +26,7 @@ export Dapps from './Dapps';
 export Home from './Home';
 export ParityBar from './ParityBar';
 export Settings, { SettingsBackground, SettingsParity, SettingsProxy, SettingsViews } from './Settings';
+export RedPacket from './RedPacket';
 export Signer from './Signer';
 export Status from './Status';
 export Vaults from './Vaults';

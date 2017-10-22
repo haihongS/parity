@@ -19,7 +19,7 @@ import {
   Accounts, Account, Addresses, Address, Application,
   Contract, Contracts, Dapp, Dapps, Home,
   Settings, SettingsBackground, SettingsParity, SettingsProxy,
-  SettingsViews, Signer, Status,
+  SettingsViews, Signer, Status, RedPacket,
   Vaults, Wallet, Web, WriteContract
 } from '~/views';
 import builtinDapps from '~/views/Dapps/builtin.json';
@@ -138,7 +138,8 @@ const childRoutes = [
   { path: 'home', component: Home },
   { path: 'web', component: Web },
   { path: 'web/:url', component: Web },
-  { path: 'signer', component: Signer }
+  { path: 'signer', component: Signer },
+  { path: 'redpacket', component: RedPacket}
 ];
 
 // TODO : use ES6 imports when supported

@@ -14,58 +14,25 @@
 // You should have received a copy of the GNU General Public License
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
-export default {
-  label: 'settings',
+import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl';
 
-  background: {
-    label: 'background'
-  },
+import { Actionbar } from '~/ui';
 
-  parity: {
-    label: 'parity'
-  },
-
-  proxy: {
-    label: 'proxy'
-  },
-
-  views: {
-    label: 'views',
-
-    accounts: {
-      label: 'Accounts'
-    },
-
-    addresses: {
-      label: 'Addressbook'
-    },
-
-    apps: {
-      label: 'Applications'
-    },
-
-    contracts: {
-      label: 'Contracts'
-    },
-
-    home: {
-      label: 'Home'
-    },
-
-    status: {
-      label: 'Status'
-    },
-
-    redpacket: {
-      label: 'Red Packet'
-    },
-
-    signer: {
-      label: 'Signer'
-    },
-
-    settings: {
-      label: 'Settings'
-    }
+export default class RedPacket extends Component {
+  render () {
+    return (
+      <div>
+      <Actionbar
+    title={
+      <FormattedMessage
+      id='redpacket.title'
+      defaultMessage='...'
+      />
   }
-};
+  />
+    哇哇？
+    </div>
+  );
+  }
+}

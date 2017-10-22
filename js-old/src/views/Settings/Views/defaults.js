@@ -72,7 +72,12 @@ const defaultViews = {
     route: '/signer',
     value: 'signer'
   },
-
+  redpacket: {
+    active: true,
+    icon: <AppsIcon />,
+    route: '/redpacket',
+    value: 'redpacket'
+  },
   settings: {
     active: true,
     fixed: true,
