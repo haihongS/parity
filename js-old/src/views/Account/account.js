@@ -116,6 +116,7 @@ class Account extends Component {
         { this.renderFundDialog() }
         { this.renderPasswordDialog(account) }
         { this.renderTransferDialog(account) }
+        { this.renderRedPacketDialog(account) }
         { this.renderVerificationDialog() }
         { this.renderActionbar(account) }
         <Page padded>
@@ -171,6 +172,17 @@ class Account extends Component {
           />
         }
         onClick={ this.store.toggleTransferDialog }
+      />,
+      <Button
+        icon={ <SendIcon /> }
+        key='PacketFunds'
+        label={
+          <FormattedMessage
+            id='account.button.redpacket'
+            defaultMessage='red packet'
+          />
+        }
+        onClick={ this.store.toggleRedPacketDialog }
       />,
       <Button
         icon={
@@ -463,6 +475,19 @@ class Account extends Component {
         onClose={ this.store.toggleTransferDialog }
       />
     );
+  }
+
+  renderRedPacketDialog (account) {
+    if (!this.store.isRedPacketVisible) {
+      return null;
+    }
+
+    return (
+      <Transfer
+      account={ account }
+      onClose={ this.store.toggleRedPacketDialog }
+    />
+  );
   }
 
   renderVerificationDialog () {

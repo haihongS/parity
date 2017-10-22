@@ -24,6 +24,7 @@ export default class Store {
   @observable isFundVisible = false;
   @observable isPasswordVisible = false;
   @observable isTransferVisible = false;
+  @observable isRedPacketVisible = false;
   @observable isVerificationVisible = false;
 
   @action toggleDeleteDialog = () => {
@@ -52,6 +53,10 @@ export default class Store {
 
   @action toggleTransferDialog = () => {
     this.isTransferVisible = !this.isTransferVisible;
+  }
+
+  @action toggleRedPacketDialog = () => {
+    this.isRedPacketVisible = !this.isRedPacketVisible;
   }
 
   @action toggleVerificationDialog = () => {
