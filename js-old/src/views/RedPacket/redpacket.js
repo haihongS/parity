@@ -25,10 +25,10 @@ export default class RedPacket extends Component {
       <div>
         <Actionbar
           title={
-          <FormattedMessage
-          id='redpacket.title'
-          defaultMessage='...'
-          />
+            <FormattedMessage
+            id='redpacket.title'
+            defaultMessage='...'
+            />
           }
         />
         哇哇？
