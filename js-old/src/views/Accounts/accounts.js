@@ -483,9 +483,7 @@ class Accounts extends Component {
         const account = accountsInfo[address];
 
         return !account || !account.meta || !account.meta.hardware;
-      })
-      .forEach((address) => this.hwstore.createAccountInfo(wallets[address], accountsInfo[address]));
-
+      }).forEach((address) => this.hwstore.createAccountInfo(wallets[address], accountsInfo[address]));
     this.setVisibleAccounts();
   }
 }
