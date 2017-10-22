@@ -487,7 +487,7 @@ class Account extends Component {
         account={ account }
         onClose={ this.store.toggleRedPacketDialog }
       />
-  );
+    );
   }
 
   renderVerificationDialog () {

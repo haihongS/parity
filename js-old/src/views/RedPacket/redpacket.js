@@ -24,15 +24,15 @@ export default class RedPacket extends Component {
     return (
       <div>
         <Actionbar
-        title={
-        <FormattedMessage
+          title={
+          <FormattedMessage
           id='redpacket.title'
           defaultMessage='...'
+          />
+          }
         />
-      }
-      />
         哇哇？
-      </div>
+        </div>
     );
   }
 }
