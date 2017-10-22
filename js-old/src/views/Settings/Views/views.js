@@ -127,12 +127,12 @@ class Views extends Component {
             {
               this.renderView('redpacket',
                 <FormattedMessage
-                 id='settings.views.redpacket.label'
+                  id='settings.views.redpacket.label'
                 />,
-               <FormattedMessage
-                id='settings.views.redpacket.description'
-                defaultMessage='Red Packet.'
-               />
+                <FormattedMessage
+                  id='settings.views.redpacket.description'
+                  defaultMessage='Red Packet.'
+                />
               )
             }
             {
