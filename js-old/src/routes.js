@@ -139,7 +139,7 @@ const childRoutes = [
   { path: 'web', component: Web },
   { path: 'web/:url', component: Web },
   { path: 'signer', component: Signer },
-  { path: 'redpacket', component: RedPacket}
+  { path: 'redpacket', component: RedPacket }
 ];
 
 // TODO : use ES6 imports when supported
