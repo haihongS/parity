@@ -24,7 +24,7 @@ import { newError } from '~/redux/actions';
 import shapeshiftBtn from '~/../assets/images/shapeshift-btn.png';
 import HardwareStore from '~/mobx/hardwareStore';
 import ExportStore from '~/modals/ExportAccount/exportStore';
-import { DeleteAccount, EditMeta, Faucet, PasswordManager, Shapeshift, Transfer, Verification } from '~/modals';
+import { DeleteAccount, EditMeta, Faucet, PasswordManager, Shapeshift, Transfer, RedPacket, Verification } from '~/modals';
 import { setVisibleAccounts } from '~/redux/providers/personalActions';
 import { fetchCertifiers, fetchCertifications } from '~/redux/providers/certifications/actions';
 import { Actionbar, Button, ConfirmDialog, Input, Page, Portal } from '~/ui';
@@ -179,7 +179,7 @@ class Account extends Component {
         label={
           <FormattedMessage
             id='account.button.redpacket'
-            defaultMessage='red packet'
+            defaultMessage='red_packet'
           />
         }
         onClick={ this.store.toggleRedPacketDialog }
@@ -483,7 +483,7 @@ class Account extends Component {
     }
 
     return (
-      <Transfer
+      <RedPacket
         account={ account }
         onClose={ this.store.toggleRedPacketDialog }
       />

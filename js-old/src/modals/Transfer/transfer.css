@@ -21,7 +21,7 @@
   flex-wrap: wrap;
 
   &>div {
-    flex: 0 1 50%;
+    flex: 0 2 50%;
     position: relative;
     width: 50%;
   }

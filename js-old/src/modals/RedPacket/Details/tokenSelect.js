@@ -23,7 +23,7 @@ import { isEqual } from 'lodash';
 import { Select } from '~/ui/Form';
 import TokenImage from '~/ui/TokenImage';
 
-import styles from '../transfer.css';
+import styles from '../redpacket.css';
 
 class TokenSelect extends Component {
   static contextTypes = {
@@ -111,8 +111,8 @@ class TokenSelect extends Component {
     return (
       <Select
         className={ styles.tokenSelect }
-        label='type of token transfer'
-        hint='type of token to transfer'
+        label='type of token redpacket'
+        hint='type of token to redpacketr'
         value={ value }
         onChange={ onChange }
       >

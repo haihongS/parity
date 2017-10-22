@@ -29,6 +29,7 @@ export Faucet from './Faucet';
 export FirstRun from './FirstRun';
 export LoadContract from './LoadContract';
 export PasswordManager from './PasswordManager';
+export RedPacket from './RedPacket';
 export SaveContract from './SaveContract';
 export Shapeshift from './Shapeshift';
 export Transfer from './Transfer';

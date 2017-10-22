@@ -29,14 +29,14 @@ import { nullableProptype } from '~/util/proptypes';
 import Details from './Details';
 import Extras from './Extras';
 
-import TransferStore, { WALLET_WARNING_SPENT_TODAY_LIMIT } from './store';
-import styles from './transfer.css';
+import RedPacketStore, { WALLET_WARNING_SPENT_TODAY_LIMIT } from './store';
+import styles from './redPacket.css';
 
 const STEP_DETAILS = 0;
 const STEP_EXTRA = 1;
 
 @observer
-class Transfer extends Component {
+class RedPacket extends Component {
   static contextTypes = {
     api: PropTypes.object.isRequired
   }
@@ -54,7 +54,7 @@ class Transfer extends Component {
     wallet: PropTypes.object
   }
 
-  store = new TransferStore(this.context.api, this.props);
+  store = new RedPacketStore(this.context.api, this.props);
 
   render () {
     const { stage, steps } = this.store;
@@ -96,7 +96,7 @@ class Transfer extends Component {
     if (walletWarning === WALLET_WARNING_SPENT_TODAY_LIMIT) {
       const warning = (
         <FormattedMessage
-          id='transfer.warning.wallet_spent_limit'
+          id='redpacket.warning.wallet_spent_limit'
           defaultMessage='This transaction value is above the remaining daily limit. It will need to be confirmed by other owners.'
         />
       );
@@ -200,7 +200,7 @@ class Transfer extends Component {
         key='cancel'
         label={
           <FormattedMessage
-            id='transfer.buttons.cancel'
+            id='redpacket.buttons.cancel'
             defaultMessage='Cancel'
           />
         }
@@ -214,7 +214,7 @@ class Transfer extends Component {
         key='next'
         label={
           <FormattedMessage
-            id='transfer.buttons.next'
+            id='redpacket.buttons.next'
             defaultMessage='Next'
           />
         }
@@ -227,7 +227,7 @@ class Transfer extends Component {
         key='back'
         label={
           <FormattedMessage
-            id='transfer.buttons.back'
+            id='redpacket.buttons.back'
             defaultMessage='Back'
           />
         }
@@ -246,7 +246,7 @@ class Transfer extends Component {
         key='send'
         label={
           <FormattedMessage
-            id='transfer.buttons.send'
+            id='redpacket.buttons.send'
             defaultMessage='Send'
           />
         }
@@ -310,4 +310,4 @@ function mapDispatchToProps (dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Transfer);
+)(RedPacket);

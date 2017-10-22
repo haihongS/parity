@@ -22,7 +22,7 @@ import Form, { Input, InputAddressSelect, AddressSelect } from '~/ui/Form';
 import { nullableProptype } from '~/util/proptypes';
 
 import TokenSelect from './tokenSelect';
-import styles from '../transfer.css';
+import styles from '../redpacket.css';
 
 export const CHECK_STYLE = {
   position: 'absolute',
@@ -59,8 +59,8 @@ export default class Details extends Component {
     const { all, extras, token, total, totalError, value, valueError } = this.props;
     const label = (
       <FormattedMessage
-        id='transfer.details.amount.label'
-        defaultMessage='amount to transfer (in {tag})'
+        id='redpacket.details.amount.label'
+        defaultMessage='amount to redpacket (in {tag})'
         values={ {
           tag: token.tag
         } }
@@ -79,8 +79,8 @@ export default class Details extends Component {
               label={ label }
               hint={
                 <FormattedMessage
-                  id='transfer.details.amount.hint'
-                  defaultMessage='the amount to transfer to the recipient'
+                  id='redpacket.details.amount.hint'
+                  defaultMessage='the amount to redpacket to the recipient'
                 />
               }
               value={ value }
@@ -93,7 +93,7 @@ export default class Details extends Component {
               checked={ all }
               label={
                 <FormattedMessage
-                  id='transfer.details.fullBalance.label'
+                  id='redpacket.details.fullBalance.label'
                   defaultMessage='full account balance'
                 />
               }
@@ -108,7 +108,7 @@ export default class Details extends Component {
               disabled
               label={
                 <FormattedMessage
-                  id='transfer.details.total.label'
+                  id='redpacket.details.total.label'
                   defaultMessage='total transaction amount'
                 />
               }
@@ -125,7 +125,7 @@ export default class Details extends Component {
               checked={ extras }
               label={
                 <FormattedMessage
-                  id='transfer.details.advanced.label'
+                  id='redpacket.details.advanced.label'
                   defaultMessage='advanced sending options'
                 />
               }
@@ -152,13 +152,13 @@ export default class Details extends Component {
           error={ senderError }
           label={
             <FormattedMessage
-              id='transfer.details.sender.label'
+              id='redpacket.details.sender.label'
               defaultMessage='sender address'
             />
           }
           hint={
             <FormattedMessage
-              id='transfer.details.sender.hint'
+              id='redpacket.details.sender.hint'
               defaultMessage='the sender address'
             />
           }
@@ -177,13 +177,13 @@ export default class Details extends Component {
         <InputAddressSelect
           label={
             <FormattedMessage
-              id='transfer.details.recipient.label'
+              id='redpacket.details.recipient.label'
               defaultMessage='recipient address'
             />
           }
           hint={
             <FormattedMessage
-              id='transfer.details.recipient.hint'
+              id='redpacket.details.recipient.hint'
               defaultMessage='the recipient address'
             />
           }

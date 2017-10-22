@@ -19,7 +19,7 @@ import { FormattedMessage } from 'react-intl';
 
 import { GasPriceEditor, Form, Input } from '~/ui';
 
-import styles from '../transfer.css';
+import styles from '../redpacket.css';
 
 export default class Extras extends Component {
   static propTypes = {
@@ -65,13 +65,13 @@ export default class Extras extends Component {
         error={ dataError }
         hint={
           <FormattedMessage
-            id='transfer.advanced.data.hint'
+            id='redpacket.advanced.data.hint'
             defaultMessage='the data to pass through with the transaction'
           />
         }
         label={
           <FormattedMessage
-            id='transfer.advanced.data.label'
+            id='redpacket.advanced.data.label'
             defaultMessage='transaction data'
           />
         }
