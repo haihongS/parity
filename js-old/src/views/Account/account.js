@@ -484,9 +484,9 @@ class Account extends Component {
 
     return (
       <Transfer
-      account={ account }
-      onClose={ this.store.toggleRedPacketDialog }
-    />
+        account={ account }
+        onClose={ this.store.toggleRedPacketDialog }
+      />
   );
   }
 
